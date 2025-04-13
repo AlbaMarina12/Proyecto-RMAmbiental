@@ -6,6 +6,7 @@ import Servicios from "./componentes/Servicios";
 import Contacto from "./componentes/Contacto";
 import Login from "./componentes/Login";
 import Registro from "./componentes/Registro";
+import DatosDelUsuario from "./componentes/DatosDelUsuario";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
         <Route path="/contacto" element={<Contacto />} />
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Registro />} />
+        <Route path="/datos-del-usuario" element={<DatosDelUsuario/>} />
       </Routes>
     </>
   );
