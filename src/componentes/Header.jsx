@@ -6,6 +6,7 @@ export default function Header() {
   const handleAvatarClick = () => {
     navigate("/datos-del-usuario");
   };
+
   return (
     <header style={{ background: "#2d7a2d", padding: "1rem 0" }}>
       <nav
@@ -23,7 +24,12 @@ export default function Header() {
         <Link to="/contacto" className="nav-link">Contacto</Link>
         <Link to="/login" className="nav-link">Login</Link>
         <Link to="/register" className="nav-link">Registro</Link>
-        {}
+
+        {/* 🔽 Rutas nuevas (2.5 a 2.8) */}
+        <Link to="/nuevo-lugar" className="nav-link">Nuevo Lugar</Link>
+        <Link to="/gestionar-lugares" className="nav-link">Gestionar Lugares</Link>
+        <Link to="/solicitud-servicio" className="nav-link">Solicitar Servicio</Link>
+
         <img
           src="/usuario.png"
           alt="Avatar"
@@ -35,7 +41,7 @@ export default function Header() {
             marginRight: "-10px",
           }}
           onClick={handleAvatarClick}
-          />
+        />
       </nav>
     </header>
   );
